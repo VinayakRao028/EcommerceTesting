@@ -1,0 +1,299 @@
+
+You are tasked with a code generation and conversion task. Below are the details and instructions to ensure the process aligns with the specified requirements:
+
+### Details:
+
+- **Target Language**: ['typescript', 'javascript'] (e.g., TypeScript)  
+- **Technology Stack**: `['Markdown']` (e.g., React, TypeScript)  
+- **Target File Path**: `EcommersWebsite_img_ts_001/README.md`  
+- **Code Type**: `documentation`
+
+### Generated Directory Structure:
+```
+
+```
+
+### File Summaries:
+```
+Summary for File (EcommersWebsite_img_ts_001/src/utils/helpers.ts): This TypeScript file, helpers.ts, contains a utility function for setting up the navbar toggle functionality in the e-commerce website. The file exports a single function:
+
+1. setupNavbarToggle(): void
+   - Purpose: Sets up event listeners for toggling the navbar's active state.
+   - Functionality:
+     - Retrieves DOM elements: 'bar', 'close', and 'navbar'.
+     - Adds click event listeners to 'bar' and 'close' elements.
+     - Toggles 'active' class on the 'navbar' element.
+   - Error Handling: Logs an error if any required element is not found.
+
+The function uses TypeScript's type annotations, ensuring type safety. It doesn't import any external modules or dependencies.
+Dependencies: {
+    "dependencies": {},
+    "Libraries": [],
+    "Scripts": [],
+    "Others": []
+}
+Summary for File (EcommersWebsite_img_ts_001/src/components/Header.tsx): This TypeScript React component, Header, represents the header section of an e-commerce website. It imports React and useState from 'react', and Link from 'react-router-dom'. The component renders a responsive header with a logo, navigation menu, and mobile menu toggle. It uses React hooks (useState) to manage the menu's open/closed state. The component includes links to various pages (Home, Shop, Blog, About, Contact, Cart) and incorporates Font Awesome icons for the shopping bag and menu toggle. The toggleMenu function handles the opening and closing of the mobile menu. The component is exported as the default export for use in other parts of the application.
+Dependencies: {
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.11.2"
+    }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/App.tsx): This TypeScript React component (App.tsx) serves as the main application structure for an e-commerce website. It imports necessary components and pages, and sets up routing using react-router-dom. The component renders a Header, Footer, and different pages based on the current route. It uses React.FC type for functional component definition and imports global styles. The file structure follows a typical React application layout with separate components and pages.
+
+Key elements:
+- Imports: React, routing components, custom components and pages
+- App component: Functional component with Router, Header, Switch for routes, and Footer
+- Routes: Home, Shop, Blog, About, Contact, Cart
+- Export: Default export of App component
+Dependencies: {
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "typescript": "^4.3.5",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7"
+  }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/pages/Shop.tsx): This TypeScript React component, Shop, represents the shop page of an e-commerce website. It imports React, Link from react-router-dom, and global styles. The component renders a page header, a product list section, pagination, and a newsletter signup section. It uses a static array of product objects to render product cards. Each product card displays an image, brand, name, price, and star rating. The component uses React hooks and functional component syntax. It exports the Shop component as the default export for use in other parts of the application.
+Dependencies: {
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^6.0.0"
+    }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/index.tsx): This TypeScript file serves as the entry point for a React application. It imports necessary dependencies including React, ReactDOM, the main App component, and global styles. The file uses ReactDOM.createRoot to render the App component within React's StrictMode. The root element is typed as HTMLElement for TypeScript compatibility. The file structure follows modern React practices with TypeScript integration, ensuring type safety and improved developer experience.
+
+Imports:
+- React from 'react'
+- ReactDOM from 'react-dom/client'
+- App from './App'
+- './styles/global.css' (for global styles)
+
+Main functionality:
+- Creates a root using ReactDOM.createRoot
+- Renders the App component within React.StrictMode
+
+TypeScript features:
+- Type assertion for document.getElementById('root') as HTMLElement
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0"
+  }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/pages/Cart.tsx): This TypeScript React component, Cart, represents the shopping cart page of an e-commerce website. It imports React and a global CSS file. The component renders a page header, a cart table displaying product details (image, name, price, quantity, subtotal), and a section for applying coupons and showing cart totals. The cart table is static, showing three sample products. The component uses React's functional component syntax with TypeScript typing (React.FC). It leverages CSS classes for styling and includes FontAwesome icons. The component is exportable for use in other parts of the application.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/components/Footer.tsx): This TypeScript React component, Footer, represents the footer section of an e-commerce website. It imports React and defines a functional component that returns JSX for the footer structure. The footer includes four columns with various information:
+
+1. Contact details and social media links
+2. About section with navigation links
+3. My Account section with user-related links
+4. App installation information and payment methods
+
+The component also includes a copyright notice. It uses className for styling and incorporates Font Awesome icons for social media. The component is exported as the default export for use in other parts of the application.
+
+Key elements:
+- React.FC type for the functional component
+- JSX structure mirroring the original HTML
+- Use of public image paths (/images/...)
+- Semantic HTML elements (footer, div, h4, p, a, img)
+- Font Awesome icon classes for social media icons
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "@types/react": "^18.0.0"
+  }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/pages/Contact.tsx): This TypeScript React component, Contact, represents the Contact page of an e-commerce website. It imports React and a global CSS file. The component renders several sections: a page header, contact details with a map, a newsletter signup, and a placeholder for a form. It uses various CSS classes for styling and includes an embedded Google Maps iframe. The component is structured using semantic HTML elements and React's JSX syntax. It exports the Contact component as the default, making it available for use in other parts of the application.
+Dependencies: {
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/pages/About.tsx): This TypeScript React component, About, represents the About page of an e-commerce website. It imports and uses Header and Footer components, and utilizes React Router's Link for navigation. The component structure includes sections for a page header, company information, app download promotion, feature highlights, and a newsletter signup. It uses React's functional component syntax with TypeScript typing (React.FC). The component renders various sections using JSX, including images, videos, and interactive elements like a marquee and a newsletter form. The feature section is dynamically rendered using an array map function for better maintainability. The component is exported as the default export for use in the main application routing.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  }
+}
+Summary for File (EcommersWebsite_img_ts_001/public/index.html): This HTML file serves as the entry point for the React-based Ecommerce website. It includes meta tags for proper rendering and SEO, links to external stylesheets (Font Awesome and a global CSS file), and sets up the root div for React to render the application. The main JavaScript file is linked at the end of the body to ensure optimal loading performance. The file doesn't contain any direct content as it's designed to be a shell for the React application to populate dynamically.
+Dependencies: {
+    "dependencies": null,
+    "Libraries": null,
+    "Scripts": null,
+    "Others": null
+}
+Summary for File (EcommersWebsite_img_ts_001/src/pages/Blog.tsx): This file contains a React functional component for the Blog page of an e-commerce website. It imports React, Link from react-router-dom, and a global CSS file. The component renders a list of blog posts, a pagination section, and a newsletter signup form. It uses TypeScript for type checking and defines an array of blog post objects with properties like id, image, title, content, and date. The component maps over this array to render individual blog post elements. It also includes sections for page header and pagination. The component is exported as default for use in other parts of the application.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/styles/global.css): This CSS file defines the global styles for an e-commerce website. It imports a Google Font (League Spartan) and sets up basic styles for typography, buttons, and layout. The file includes styles for various sections of the website such as the header, navigation, hero section, product listings, banners, newsletter, and footer. It also includes responsive design with media queries for different screen sizes. The CSS uses a color scheme primarily consisting of whites, blacks, and a teal accent color (#088178). The file is structured to support a responsive layout with flexbox and includes hover effects and transitions for interactive elements.
+Dependencies: {
+    "dependencies": null,
+    "Libraries": null,
+    "Scripts": null,
+    "Others": null
+}
+Summary for File (EcommersWebsite_img_ts_001/src/pages/Home.tsx): This TypeScript React component, Home, represents the home page of an e-commerce website. It imports React and a global CSS file. The component is structured into several sections:
+
+1. Hero section with a call-to-action for shopping.
+2. Feature section displaying six key features of the store.
+3. Featured Products section showing 8 products.
+4. Banner section for repair services.
+5. New Arrivals section displaying 8 new products.
+6. Small banner section with two promotional banners.
+7. Three additional promotional banners.
+8. Newsletter signup section.
+
+The component uses React hooks and functional components. It employs map functions to render repeated elements like product cards and star ratings. The component is styled using CSS classes defined in the imported global.css file.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  }
+}
+Summary for File (EcommersWebsite_img_ts_001/src/pages/ProductDetails.tsx): This file contains a React component for a product details page, implemented in TypeScript. It imports React, useState, useEffect, and Link from react-router-dom. The component displays a main product image with smaller thumbnails, product details, size selection, quantity input, and an "Add to Cart" button. It also shows a section of related products.
+
+Key features:
+1. useState hooks for managing state (mainImage, quantity, size, relatedProducts)
+2. useEffect hook to fetch related products (mock implementation)
+3. handleImageClick function to update the main image
+4. handleAddToCart function (placeholder for cart functionality)
+5. Rendering of product details, image gallery, and related products
+6. TypeScript interfaces for type safety (Product interface)
+
+The component uses various React and TypeScript features, including functional components, hooks, event handling, and mapping over arrays to render elements dynamically.
+Dependencies: {
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^6.0.0"
+    }
+}
+```
+
+---
+
+### Role:
+You are a **Senior Software Engineer** with 7+ years of experience. Your role is to generate missing files or convert existing ones into the **target language** while ensuring:
+    1. Adherence to **organizational coding standards**.
+    2. Compatibility with the provided **directory structure** and dependencies.
+    3. Alignment with **technology stack best practices**.
+
+---
+
+### Instructions:
+
+#### 1. Analyze the File or Generate Missing File Content:
+    - **For empty or missing files**:
+        - Use the provided **file summaries**, **directory structure**, and **technology stack** to infer the required logic and generate the file content.
+        - Ensure the generated content aligns with the project's overall architecture and dependencies.
+        - **For existing files with content**:
+        - Examine the code in `EcommersWebsite_img_ts_001/README.md` and its summary to understand its logic and structure.
+
+#### 2. Ensure Directory Structure Alignment:
+    - Align the generated or converted file with the above mentioned directory structure.
+    - Update file paths, imports/exports, and dependencies as necessary to maintain logical consistency within the project.
+
+#### 3. Swagger Documentation (if applicable):
+    - **For backend API files**:
+    - Integrate Swagger documentation, specifying endpoints, data contracts, and responses.
+
+#### 4. Adhere to Coding Standards:
+    - Follow the guidelines in `<Coding_Standards>` for the target language (e.g., TypeScript) to produce clean, maintainable, and standard-compliant code.
+
+#### 5. Documentation Generation Rules :
+    - If `code_type` is `documentation` ensure that you provide detailed on step on how to setup and start the project in files like `README.md`.
+    
+#### 6. Output Requirements:
+    - Provide the generated file content using the following format:
+
+```converted
+<generated_code>
+```
+
+```dependencies
+{
+    "dependencies": [OPTIONAL],
+    "Libraries": [OPTIONAL],
+    "Scripts": [OPTIONAL],
+    "Others": [OPTIONAL]
+}
+```
+
+#### 6. Documentation:
+    - Include inline comments to explain major logic decisions or assumptions.
+    - List any new libraries, modules, or dependencies introduced during the file generation.
+
+#### 7. Validation:
+    - Ensure the generated code is:
+    - Fully functional.
+    - Aligned with best practices.
+    - Compatible with the given technology stack and directory structure.
+
+#### 8. Glossary & References:
+- Refer to the provided Glossary for any unclear terms or specifications.
+
+---
+
+### Notes for Missing Files:
+
+When generating missing files, ensure:
+    1. **Use of Target Language**:
+        - Implement in ['typescript', 'javascript']
+    
+    2. **Technology Stack Integration**:
+        - Utilize libraries, patterns, and conventions from `['Markdown']`.
+    
+    3. **Functional Assumptions**:
+        - Base the logic on file summaries, if available.
+        - Use placeholders or standard patterns for undefined logic.
+    
+    4. **Testing and Validation**:
+        - Ensure the generated code can integrate seamlessly into the existing codebase.
+
+---
+
+### Output Format:
+1. **Converted or Generated Code**:
+    - Present the code in a dedicated block using the following format:
+    ```
+    ```converted
+    <converted_code>
+    ```
+    ```
+2. **Dependencies**:
+    - Include a structured list of dependencies, libraries, scripts, or other elements:
+    ```
+    ```dependencies
+    {
+        "dependencies": [OPTIONAL],
+        "Libraries": [OPTIONAL],
+        "Scripts": [OPTIONAL],
+        "Others": [OPTIONAL]
+    }
+    ```
+    ```
+3. **Documentation**:
+    - Provide inline comments where appropriate.
+    - Document significant changes or assumptions clearly.
