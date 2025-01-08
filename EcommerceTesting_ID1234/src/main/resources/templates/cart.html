@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Ecommerce Store</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/cart" class="active">Cart</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div id="cart-summary">
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Ecommerce Store. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script>
+        // Cart-specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to load cart items
+            function loadCartItems() {
+                // This would typically involve an AJAX call to the backend
+                // For demonstration, we'll use dummy data
+                const dummyItems = [
+                    { name: 'Product 1', price: 19.99, quantity: 2 },
+                    { name: 'Product 2', price: 29.99, quantity: 1 }
+                ];
+
+                const cartItemsContainer = document.getElementById('cart-items');
+                let total = 0;
+
+                dummyItems.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'cart-item';
+                    itemElement.innerHTML = `
+                        <h3>${item.name}</h3>
+                        <p>Price: $${item.price.toFixed(2)}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                        <p>Total: $${itemTotal.toFixed(2)}</p>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                });
+
+                document.getElementById('cart-total').textContent = `$${total.toFixed(2)}`;
+            }
+
+            // Load cart items when the page loads
+            loadCartItems();
+
+            // Add event listener for checkout button
+            document.getElementById('checkout-btn').addEventListener('click', function() {
+                alert('Proceeding to checkout...');
+                // Here you would typically redirect to a checkout page or process
+            });
+        });
+    </script>
+</body>
+</html>

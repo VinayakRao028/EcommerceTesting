@@ -1,0 +1,379 @@
+
+<User_Instructions>
+    Convert the repository from source language to the following target language. During conversion consider previous conversions and chat histories to convert the current file. The dependent files are already generated and given in chat history for reference. Please convert the file accordingly.
+</User_Instructions>
+
+<Current_File>
+    <Target File Path> EcommersWebsite_img_ts_001/src/pages/Blog.tsx </Target File Path>
+<Source File Path> EcommersWebsite_img/blog.html </Source File Path>
+
+<Source File Content> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommers Website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/swethlogopng5.png" class="logo" alt=""></a>
+ 
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+            
+        </div>
+    </section>
+
+    <section id="page-header" class="blog-header">
+        <h2>#readmore</h2>
+        <p>Read all case studies about our products</p>
+    </section>
+
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b1.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The cotton-Jersey Zip-Up Hoodies</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero accusamus fuga alias repellendus voluptatibus, velit odio repellat explicabo voluptatum.</p>
+                <a href="#">CONTINUE READING </a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b2.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The cotton-Jersey Zip-Up Hoodies</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero accusamus fuga alias repellendus voluptatibus, velit odio repellat explicabo voluptatum.</p>
+                <a href="#">CONTINUE READING </a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>How to style a Quiff</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero accusamus fuga alias repellendus voluptatibus, velit odio repellat explicabo voluptatum.</p>
+                <a href="#">CONTINUE READING </a>
+            </div>
+            <h1>20/08</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b4.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Must-Have skater girl items</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero accusamus fuga alias repellendus voluptatibus, velit odio repellat explicabo voluptatum.</p>
+                <a href="#">CONTINUE READING </a>
+            </div>
+            <h1>15/10</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b5.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Runway inspired trends</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero accusamus fuga alias repellendus voluptatibus, velit odio repellat explicabo voluptatum.</p>
+                <a href="#">CONTINUE READING </a>
+            </div>
+            <h1>16/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b6.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>AW20 Menswear Trends</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi libero accusamus fuga alias repellendus voluptatibus, velit odio repellat explicabo voluptatum.</p>
+                <a href="#">CONTINUE READING </a>
+            </div>
+            <h1>10/03</h1>
+        </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1" >
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get Email updates about our latests shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>562 Wellingtom road, Street 32,San Francisco</p>
+            <p><strong>Phone:</strong> +8 40470289 +7 89048098 </p>
+            <p><strong>Hours</strong>10:00 - 18:00 Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About:</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy Polocy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateway</p>
+            <img src="images/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>©Copyright 2021 Tech - HTML CSS Ecommers Templete</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> </Source File Content>
+
+</Current_File>
+
+<Target_Language>
+    TypeScript
+    <Technology_Stack>
+        {'techstack': ['TypeScript', 'React'], 'code_type': 'frontend'}
+    </Technology_Stack>
+</Target_Language>
+
+<Generated_Directory_Structure>
+    .
+├── README.md
+├── hospital_management_system_py3f7j8
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── src
+│   │   ├── __init__.py
+│   │   ├── app.py
+│   │   ├── config
+│   │   │   ├── __init__.py
+│   │   │   └── settings.py
+│   │   ├── db
+│   │   │   ├── __init__.py
+│   │   │   └── mongodb.py
+│   │   ├── models
+│   │   │   ├── __init__.py
+│   │   │   ├── diseases.py
+│   │   │   ├── patient.py
+│   │   │   ├── rooms.py
+│   │   │   └── user.py
+│   │   ├── routes
+│   │   │   ├── __init__.py
+│   │   │   ├── diseases.py
+│   │   │   ├── login.py
+│   │   │   ├── patients.py
+│   │   │   ├── rooms.py
+│   │   │   ├── settings.py
+│   │   │   └── users.py
+│   │   ├── static
+│   │   │   ├── images
+│   │   │   │   └── nhs.png
+│   │   │   └── scripts
+│   │   │       ├── addpatient.js
+│   │   │       ├── dashboard.js
+│   │   │       ├── patientPage.js
+│   │   │       └── systemSettings.js
+│   │   └── templates
+│   │       ├── addpatient.html
+│   │       ├── dashboard.html
+│   │       ├── layout.html
+│   │       ├── login.html
+│   │       ├── patientPage.html
+│   │       └── systemsettings.html
+│   └── tests
+│       ├── __init__.py
+│       ├── test_app.py
+│       ├── test_db
+│       │   ├── __init__.py
+│       │   └── test_mongodb.py
+│       ├── test_models
+│       │   ├── __init__.py
+│       │   ├── test_diseases.py
+│       │   ├── test_patient.py
+│       │   ├── test_rooms.py
+│       │   └── test_user.py
+│       └── test_routes
+│           ├── __init__.py
+│           ├── test_diseases.py
+│           ├── test_login.py
+│           ├── test_patients.py
+│           ├── test_rooms.py
+│           ├── test_settings.py
+│           └── test_users.py
+├── output_directory
+│   ├── batched_mapping_block.json
+│   ├── contents.json
+│   ├── error_fix_system_prompt.txt
+│   ├── mapped_techstack_info.json
+│   ├── missing_file_gen_system_prompt.txt
+│   ├── sorted_mapping_block.json
+│   └── target_to_currents.json
+├── package.json
+├── public
+│   ├── images
+│   │   ├── about
+│   │   ├── banner
+│   │   ├── blog
+│   │   ├── features
+│   │   ├── pay
+│   │   ├── people
+│   │   └── products
+│   └── index.html
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── Footer.tsx
+│   │   └── Header.tsx
+│   ├── index.tsx
+│   ├── pages
+│   │   ├── About.tsx
+│   │   ├── Blog.tsx
+│   │   ├── Cart.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Home.tsx
+│   │   ├── ProductDetails.tsx
+│   │   └── Shop.tsx
+│   ├── styles
+│   │   └── global.css
+│   └── utils
+│       └── helpers.ts
+├── tests
+│   ├── App.test.tsx
+│   └── Home.test.tsx
+├── tsconfig.json
+└── user_prompts
+    ├── error_fix
+    │   ├── About.tsx.txt
+    │   ├── Cart.tsx.txt
+    │   ├── Contact.tsx.txt
+    │   ├── Header.tsx.txt
+    │   └── Shop.tsx.txt
+    └── missing_files
+        ├── Blog.tsx.txt
+        ├── README.md.txt
+        └── package.json.txt
+
+34 directories, 81 files
+
+
+The Mappings for the above target files to the respective source files are as follows: 
+{'EcommersWebsite_img_ts_001/src/components/Header.tsx': ['EcommersWebsite_img/index.html'], 'EcommersWebsite_img_ts_001/src/components/Footer.tsx': ['EcommersWebsite_img/index.html'], 'EcommersWebsite_img_ts_001/src/pages/Home.tsx': ['EcommersWebsite_img/index.html'], 'EcommersWebsite_img_ts_001/src/pages/About.tsx': ['EcommersWebsite_img/about.html'], 'EcommersWebsite_img_ts_001/src/pages/Shop.tsx': ['EcommersWebsite_img/shop.html'], 'EcommersWebsite_img_ts_001/src/pages/Blog.tsx': ['EcommersWebsite_img/blog.html'], 'EcommersWebsite_img_ts_001/src/pages/Contact.tsx': ['EcommersWebsite_img/contact.html'], 'EcommersWebsite_img_ts_001/src/pages/Cart.tsx': ['EcommersWebsite_img/cart.html'], 'EcommersWebsite_img_ts_001/src/pages/ProductDetails.tsx': ['EcommersWebsite_img/sproduct.html'], 'EcommersWebsite_img_ts_001/src/styles/global.css': ['EcommersWebsite_img/style.css'], 'EcommersWebsite_img_ts_001/src/utils/helpers.ts': ['EcommersWebsite_img/script.js'], 'EcommersWebsite_img_ts_001/src/App.tsx': ['EcommersWebsite_img/index.html'], 'EcommersWebsite_img_ts_001/src/index.tsx': ['EcommersWebsite_img/index.html'], 'EcommersWebsite_img_ts_001/public/index.html': ['EcommersWebsite_img/index.html'], 'EcommersWebsite_img_ts_001/tests/App.test.tsx': ['EcommersWebsite_img_ts_001/src/App.tsx'], 'EcommersWebsite_img_ts_001/tests/Home.test.tsx': ['EcommersWebsite_img_ts_001/src/pages/Home.tsx'], 'EcommersWebsite_img_ts_001/package.json': ['EcommersWebsite_img/package.json'], 'EcommersWebsite_img_ts_001/tsconfig.json': [], 'EcommersWebsite_img_ts_001/.gitignore': ['EcommersWebsite_img/.gitignore'], 'EcommersWebsite_img_ts_001/README.md': ['EcommersWebsite_img/README.md']}
+
+
+</Generated_Directory_Structure>
+
+<Task-Independent_conversion>
+    2. **Independent Conversion:**
+        - **Objective:** Convert the current file without considering any dependencies.
+        - **Procedure:**
+            - Analyze the current file's code to understand its logic and structure.
+            - Identify language-specific constructs and idioms that need adaptation.
+            - Make sure you follow technology stack as per the <Technology_Stack> provided.
+            - Translate these constructs into equivalent constructs in the target language and techstack in the file.
+            - Ensure the converted code maintains the original functionality.
+            - If this is backend code, implement Swagger documentation for all API endpoints.
+            - Do not rely on separate swagger.json files; instead, use inline documentation and automatic Swagger UI generation.
+            - Validate the code against the target language's best practices and conventions.
+            - Document any significant changes with comments in the code.
+            - List any new packages, libraries, or modules used in the conversion process.
+            - Dependencies should be added based on the language. Ex: Python - requirements.txt, Node.js - package.json, etc.
+</Task-Independent_conversion>
+
+<Output_Format>
+    ```converted
+    <converted_code>
+    ```
+    ```dependencies
+    {
+        "dependencies":  "Object/Array/String" [OPTIONAL],
+        "Libraries":  "Object/Array/String" [OPTIONAL],
+        "Scripts": "Object/Array/String" [OPTIONAL],
+        "Others": "Object/Array/String" [OPTIONAL],
+        ...
+    }
+    ```
+</Output_Format>
+
+<Glossary>
+    - **Target_Language:** The programming language to which the file is being converted.
+    - **Current_File:** The code of the file that needs conversion.
+    - **Dependency_Tree:** A list of files that are dependent on the current file.
+    - **Generated_Directory_Structure**: In the Generated_Directory_Structure you will find the directory structure on which you are working therefore write your code as per it only.
+    - At the end of each code you are expected to generate a technically detailed summary of the code file above with all the classes, functions and etc.
+    - First in the summary you will generate the functionality of the code file which file it imports. and in the latter part you will give the classes, function (with their return variables) and etc. Make sure the summary is built as per the language's terminologies.
+    - Summary must be enclosed inside of "```summary" and "```" delimiters.
+    - The summary should be a detailed technical overview that includes all functions, logic, variables, return types, classes, and other relevant elements. It should be comprehensive enough to allow another coder to understand and utilize the functionality of the file in a different context. Under 250 Tokens or 220 words.
+    - Your Points will be deducted in the score card if the <Output_Format> is not followed.
+    - Your Points will be deducted in the score card if the <FileMappings> is not followed.
+</Glossary>
+
+## Services Swaps
+    
+
+## Coding Language Swaps
+      - Convert `javascript` in the code group `Frontend` to the target language `typescript version:12 While Generating the code make sure you are not generating Libraries out of imagination, generate only those which are preseting in the typescript Language.` by adhering to the 'When to Apply' and 'When Not to Apply' conditions.
+  - When to Apply: 
+  - When Not to Apply: 
+
+  - Convert `javascript` in the code group `Backend` to the target language `javascript version:Latest LTS While Generating the code make sure you are not generating Libraries out of imagination, generate only those which are preseting in the javascript Language.` by adhering to the 'When to Apply' and 'When Not to Apply' conditions.
+  - When to Apply: 
+  - When Not to Apply: 
+

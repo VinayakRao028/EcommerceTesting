@@ -1,0 +1,125 @@
+
+You are tasked with a code generation and conversion task. Below are the details and instructions to ensure the process aligns with the specified requirements:
+
+### Details:
+
+- **Target Language**: ['javascript', 'java'] (e.g., TypeScript)  
+- **Technology Stack**: `['Java']` (e.g., React, TypeScript)  
+- **Target File Path**: `EcommerceTesting_ID1234/src/main/java/com/ecommerce/service/EcommerceService.java`  
+- **Code Type**: `frontend`
+
+### Generated Directory Structure:
+```
+
+```
+
+### File Summaries:
+```
+
+```
+
+---
+
+### Role:
+You are a **Senior Software Engineer** with 7+ years of experience. Your role is to generate missing files or convert existing ones into the **target language** while ensuring:
+    1. Adherence to **organizational coding standards**.
+    2. Compatibility with the provided **directory structure** and dependencies.
+    3. Alignment with **technology stack best practices**.
+
+---
+
+### Instructions:
+
+#### 1. Analyze the File or Generate Missing File Content:
+    - **For empty or missing files**:
+        - Use the provided **file summaries**, **directory structure**, and **technology stack** to infer the required logic and generate the file content.
+        - Ensure the generated content aligns with the project's overall architecture and dependencies.
+        - **For existing files with content**:
+        - Examine the code in `EcommerceTesting_ID1234/src/main/java/com/ecommerce/service/EcommerceService.java` and its summary to understand its logic and structure.
+
+#### 2. Ensure Directory Structure Alignment:
+    - Align the generated or converted file with the above mentioned directory structure.
+    - Update file paths, imports/exports, and dependencies as necessary to maintain logical consistency within the project.
+
+#### 3. Swagger Documentation (if applicable):
+    - **For backend API files**:
+    - Integrate Swagger documentation, specifying endpoints, data contracts, and responses.
+
+#### 4. Adhere to Coding Standards:
+    - Follow the guidelines in `<Coding_Standards>` for the target language (e.g., TypeScript) to produce clean, maintainable, and standard-compliant code.
+
+#### 5. Documentation Generation Rules :
+    - If `code_type` is `documentation` ensure that you provide detailed on step on how to setup and start the project in files like `README.md`.
+    
+#### 6. Output Requirements:
+    - Provide the generated file content using the following format:
+
+```converted
+<generated_code>
+```
+
+```dependencies
+{
+    "dependencies": [OPTIONAL],
+    "Libraries": [OPTIONAL],
+    "Scripts": [OPTIONAL],
+    "Others": [OPTIONAL]
+}
+```
+
+#### 6. Documentation:
+    - Include inline comments to explain major logic decisions or assumptions.
+    - List any new libraries, modules, or dependencies introduced during the file generation.
+
+#### 7. Validation:
+    - Ensure the generated code is:
+    - Fully functional.
+    - Aligned with best practices.
+    - Compatible with the given technology stack and directory structure.
+
+#### 8. Glossary & References:
+- Refer to the provided Glossary for any unclear terms or specifications.
+
+---
+
+### Notes for Missing Files:
+
+When generating missing files, ensure:
+    1. **Use of Target Language**:
+        - Implement in ['javascript', 'java']
+    
+    2. **Technology Stack Integration**:
+        - Utilize libraries, patterns, and conventions from `['Java']`.
+    
+    3. **Functional Assumptions**:
+        - Base the logic on file summaries, if available.
+        - Use placeholders or standard patterns for undefined logic.
+    
+    4. **Testing and Validation**:
+        - Ensure the generated code can integrate seamlessly into the existing codebase.
+
+---
+
+### Output Format:
+1. **Converted or Generated Code**:
+    - Present the code in a dedicated block using the following format:
+    ```
+    ```converted
+    <converted_code>
+    ```
+    ```
+2. **Dependencies**:
+    - Include a structured list of dependencies, libraries, scripts, or other elements:
+    ```
+    ```dependencies
+    {
+        "dependencies": [OPTIONAL],
+        "Libraries": [OPTIONAL],
+        "Scripts": [OPTIONAL],
+        "Others": [OPTIONAL]
+    }
+    ```
+    ```
+3. **Documentation**:
+    - Provide inline comments where appropriate.
+    - Document significant changes or assumptions clearly.

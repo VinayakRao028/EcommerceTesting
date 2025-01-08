@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product - E-commerce Store</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .product-container {
+            display: flex;
+            gap: 20px;
+        }
+        .product-image {
+            max-width: 400px;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .add-to-cart {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="" alt="Product Image" id="productImage">
+        </div>
+        <div class="product-details">
+            <h1 id="productName"></h1>
+            <p id="productDescription"></p>
+            <p class="price">Price: $<span id="productPrice"></span></p>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulated product data (in a real application, this would be fetched from a server)
+        const product = {
+            id: 1,
+            name: "Sample Product",
+            description: "This is a sample product description. It provides details about the product's features and benefits.",
+            price: 99.99,
+            imageUrl: "https://via.placeholder.com/400x400.png?text=Product+Image"
+        };
+
+        // Function to load product details
+        function loadProductDetails() {
+            document.getElementById("productName").textContent = product.name;
+            document.getElementById("productDescription").textContent = product.description;
+            document.getElementById("productPrice").textContent = product.price.toFixed(2);
+            document.getElementById("productImage").src = product.imageUrl;
+        }
+
+        // Function to add product to cart
+        function addToCart() {
+            alert(`Added ${product.name} to cart!`);
+            // In a real application, this would send data to a server or update local storage
+        }
+
+        // Load product details when the page loads
+        window.onload = loadProductDetails;
+    </script>
+</body>
+</html>
